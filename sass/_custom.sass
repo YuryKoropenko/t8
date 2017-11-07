@@ -1,0 +1,229 @@
+@import "bourbon/bourbon"
+
+/*Сброс*/
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, samp, small,
+strike, strong, sub, sup, tt, var, b, i,
+dl, dt, dd, ol, ul, li, fieldset, form,
+label, legend, table, caption, tbody, tfoot,
+thead, tr, th, td, article, aside, canvas,
+details, embed, figure, figcaption, footer,
+header, hgroup, nav, output, ruby, section,
+time, mark, audio, video
+	margin: 0
+	padding: 0
+	border: 0
+	font-size: 100%
+	font: inherit
+	vertical-align: baseline
+
+button, button:active, button:focus,
+input, input:active, input:focus
+	outline: none
+
+ol, ul
+	list-style: none
+
+.hidden
+	display: none
+
+/*standart-style*/
+.page-content
+	p
+		color: #4b4b4b
+		line-height: 20px
+	
+	h2
+		display: block
+		color: #85a17d
+		font-size: 24px
+		line-height: 22px
+	
+	h3
+		display: block
+		color: #85a17d
+		font-size: 24px
+		line-height: 22px
+		font-family: "NautilusPompiliusRegular", sans-serif
+	
+	blockquote
+		display: block
+		border-top: 1px solid #e1e1e1
+		border-bottom: 1px solid #e1e1e1
+		display: block
+		padding: 40px 165px
+		font-size: 20px
+		color: #85a17d
+		line-height: 25px
+		font-family: "UbuntuItalic", sans-serif
+		text-align: center
+	
+	ul
+		li
+			color: #4b4b4b
+			line-height: 20px
+			display: block
+			padding-left: 24px
+			position: relative
+			&::before
+				content: "\f06c"
+				font-family: "FontAwesome"
+				position: absolute
+				left: 0
+				font-size: 16px
+				color: #85a17d
+				line-height: 20px
+	
+	ol
+		li
+			color: #4b4b4b
+			line-height: 20px
+			display: block
+			padding-left: 24px
+			position: relative
+			span
+				font-family: "LobsterRegular"
+				color: #85a17d
+				font-size: 18px
+				line-height: 20px
+				position: absolute
+				left: 0
+				&:after
+					content: '.'
+	
+	b, strong
+		line-height: 20px
+		color: inherit
+		font-family: "UbuntuBold", sans-serif
+	
+	a
+		color: #85a17d
+		text-decoration: underline
+		&:hover, &:focus, &:active
+			text-decoration: none
+			color: #85a17d
+	
+	i
+		line-height: 20px
+		color: inherit
+		font-family: "UbuntuItalic", sans-serif
+
+.ui-selectmenu-button.ui-button
+	width: 100%
+	border-radius: 0
+	font-family: "UbuntuLight", sans-serif
+	color: #767676
+	padding: 10px 42px 10px 16px
+	border: 1px solid #a4a4a4
+	background-color: transparent !important
+	position: relative
+
+.ui-selectmenu-button-closed
+	&::after
+		content: "\f078"
+		font-family: "FontAwesome"
+		font-size: 12px
+		color: #767676
+		position: absolute
+		right: 16px
+		top: 50%
+		transform: translateY(-50%)
+		-webkit-transform: translateY(-50%)
+
+.ui-selectmenu-button-open
+	&::after
+		content: "\f077"
+		font-family: "FontAwesome"
+		font-size: 12px
+		color: #767676
+		position: absolute
+		right: 16px
+		top: 50%
+		transform: translateY(-50%)
+		-webkit-transform: translateY(-50%)
+
+.ui-selectmenu-icon
+	display: none !important
+
+.ui-selectmenu-text
+	font-size: 16px
+	margin-right: 0
+	vertical-align: middle
+
+.ui-menu .ui-menu-item-wrapper
+	background-color: transparent !important
+	color: #767676
+	padding: 10px 16px
+	font-family: "UbuntuLight", sans-serif
+	&:hover
+		background-color: #a4a4a4 !important
+		color: #fff
+
+.ui-menu .ui-state-focus, .ui-menu .ui-state-active
+	margin: 0
+	border: none
+
+.ui-widget.ui-widget-content
+	border: 1px solid #a4a4a4
+	border-top: none
+	border-radius: 0
+	padding-bottom: 0
+
+
+
+
+.btn
+	height: 42px
+	display: inline-block
+	width: 100%
+	text-align: center
+	line-height: 40px
+	border: 1px solid #f26c4f
+	background-color: #f26c4f
+	color: #fff
+	text-shadow: -2px 4px 5px rgba(0, 0, 0, 0.3)
+	font-size: 20px
+	font-family: "UbuntuMedium", sans-serif
+	&:hover, &:focus, &:active
+		text-decoration: none
+		background-color: transparent
+		color: #f26c4f
+	&-red
+		width: 200px
+	&-small
+		font-size: 16px
+		text-shadow: none
+	&-trans
+		background-color: transparent
+		color: #f26c4f
+		&:hover, &:focus, &:active
+			background-color: #f26c4f
+			color: #fff
+
+.p-title
+	font-size: 36px
+	color: #85a17d
+	font-family: "NautilusPompiliusRegular", sans-serif
+	display: block
+	width: 100%
+	position: relative
+	text-align: center
+	span
+		display: inline-block
+		background-color: #fff
+		padding: 0 16px
+	&::before
+		content: ''
+		display: block
+		height: 1px
+		width: 100%
+		background-color: #aec0a8
+		z-index: -1
+		position: absolute
+		left: 0
+		right: 0
+		top: 50%
+		margin-top: -0.5px

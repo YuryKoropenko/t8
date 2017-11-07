@@ -1,0 +1,702 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+
+	<title>Заголовок</title>
+<!--
+	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+	<link rel="icon" href="img/favicon/apple-touch-icon.png">
+	<link rel="icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+	<link rel="icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
+-->
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- Styles -->
+	<link rel="stylesheet" href="libs/bootstrap/bootstrap.min.css">
+	<link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css">
+	<link rel="stylesheet" href="libs/OwlCarousel2/dist/assets/owl.carousel.min.css">
+	<link rel="stylesheet" href="libs/OwlCarousel2/dist/assets/owl.theme.default.css">
+	<link rel="stylesheet" href="libs/jquery-ui/jquery-ui.min.css">
+	<link rel="stylesheet" href="css/fonts.css">
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/media.css">
+	<!-- End_Styles -->
+</head>
+<body>
+	<header class="header">
+		<div class="header__top">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-4">
+						<div class="header__h-search">
+							<div class="h-search">
+								<input type="text" class="h-search__input" placeholder="Поиск по сайту">
+								<i class="fa fa-search" aria-hidden="true"></i>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-8">
+						<div class="header__h-nav">
+							<ul class="h-nav">
+								<li class="h-nav__item">
+									<a href="#" class="h-nav__link">
+										Главная
+									</a>
+								</li>
+								<li class="h-nav__item">
+									<a href="#" class="h-nav__link">
+										Каталог
+									</a>
+								</li>
+								<li class="h-nav__item">
+									<a href="#" class="h-nav__link">
+										О магазине
+									</a>
+								</li>
+								<li class="h-nav__item">
+									<a href="#" class="h-nav__link">
+										О чае
+									</a>
+								</li>
+								<li class="h-nav__item">
+									<a href="#" class="h-nav__link">
+										Доставка и оплата
+									</a>
+								</li>
+								<li class="h-nav__item">
+									<a href="#" class="h-nav__link">
+										Оптовикам
+									</a>
+								</li>
+								<li class="h-nav__item">
+									<a href="#" class="h-nav__link">
+										Контакты
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="header__center">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-4">
+						<div class="header__h-logo">
+							<a href="/" class="h-logo">
+								<img src="img/h-logo.png" alt="Чай, кофе и другие колониальные товары" class="h-logo__img">
+							</a>
+						</div>
+					</div>
+					<div class="col-md-3">
+						<div class="header__h-schedule">
+							<div class="h-schedule">
+								<b class="h-schedule__phone">
+									+7 (495) 692-08-36
+								</b>
+								<p class="h-schedule__description">
+									Понедельник — суббота с 10 до 20 ч.<br>воскресенье — с 11 до 19 ч.
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-3">
+						<div class="header__h-addr">
+							<div class="h-addr">
+								<b class="h-schedule__phone h-addr__title">
+									Наш адрес:
+								</b>
+								<p class="h-schedule__description h-addr__desription">
+									Москва, Камергерский переулок,<br>д.3 стр. 1. <a href="#" class="h-addr__link">Показать на карте</a>
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-2">
+						<div class="header__h-profil">
+							<div class="h-profil">
+								<div class="h-profil__top">
+									<a href="#" class="h-profil__link">Вход</a>
+									<i class="h-profil__and">
+										|
+									</i>
+									<a href="#" class="h-profil__link">Регистрация</a>
+									<i class="fa fa-user" aria-hidden="true"></i>
+								</div>
+								<div class="h-profil__bottom">
+									<span class="h-profil__corz">
+										12 товаров на 5000 Р
+									</span>
+									<i class="fa fa-shopping-cart" aria-hidden="true"></i>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="header__bottom">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<div class="header__h-catalog">
+							<ul class="h-catalog">
+								<li class="h-catalog__item">
+									<a href="#" class="h-catalog__link">
+										Чай
+									</a>
+								</li>
+								<li class="h-catalog__item">
+									<a href="#" class="h-catalog__link">
+										Кофе в зернах
+									</a>
+								</li>
+								<li class="h-catalog__item">
+									<a href="#" class="h-catalog__link">
+										Сладости
+									</a>
+								</li>
+								<li class="h-catalog__item">
+									<a href="#" class="h-catalog__link">
+										Чайная посуда и аксессуары
+									</a>
+								</li>
+								<li class="h-catalog__item">
+									<a href="#" class="h-catalog__link">
+										Подарочные наборы
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+	<div class="page">
+		<div class="page__p-slider">
+			<div class="p-slider owl-carousel">
+				<div class="p-slider__item">
+					<img src="img/slider/1.jpg" alt="slid" class="p-slider__img">
+					<div class="p-slider__block" style="background-image: url(img/slider/patern.png);">
+						<div class="container">
+							<div class="row">
+								<div class="col-md-12">
+									<div class="p-slider__p-text">
+										<h2 class="p-slider__title">
+											Изысканная коллекция
+										</h2>
+										<p class="p-slider__description">
+											травяных и фруктовых добавок
+										</p>
+										<a href="#" class="btn btn-red">
+											В каталог
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="p-slider__item">
+					<img src="img/slider/1.jpg" alt="slid" class="p-slider__img">
+					<div class="p-slider__block" style="background-image: url(img/slider/patern.png);">
+						<div class="container">
+							<div class="row">
+								<div class="col-md-12">
+									<div class="p-slider__p-text">
+										<h2 class="p-slider__title">
+											Изысканная коллекция
+										</h2>
+										<p class="p-slider__description">
+											травяных и фруктовых добавок
+										</p>
+										<a href="#" class="btn btn-red">
+											В каталог
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="p-slider__item">
+					<img src="img/slider/1.jpg" alt="slid" class="p-slider__img">
+					<div class="p-slider__block" style="background-image: url(img/slider/patern.png);">
+						<div class="container">
+							<div class="row">
+								<div class="col-md-12">
+									<div class="p-slider__p-text">
+										<h2 class="p-slider__title">
+											Изысканная коллекция
+										</h2>
+										<p class="p-slider__description">
+											травяных и фруктовых добавок
+										</p>
+										<a href="#" class="btn btn-red">
+											В каталог
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="p-slider__item">
+					<img src="img/slider/1.jpg" alt="slid" class="p-slider__img">
+					<div class="p-slider__block" style="background-image: url(img/slider/patern.png);">
+						<div class="container">
+							<div class="row">
+								<div class="col-md-12">
+									<div class="p-slider__p-text">
+										<h2 class="p-slider__title">
+											Изысканная коллекция
+										</h2>
+										<p class="p-slider__description">
+											травяных и фруктовых добавок
+										</p>
+										<a href="#" class="btn btn-red">
+											В каталог
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="page__section">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<div class="page__p-title">
+							<h2 class="p-title">
+								<span>Выберите свой идеальный напиток</span>
+							</h2>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-12">
+						<div class="page__p-selectmenu">
+							<div class="p-selectmenu p-selectmenu-top">
+								<div class="p-selectmenu__item">
+									<select class="selectmenu" name="" id="">
+										<option>Первое значение</option>
+										<option>Второе значение</option>
+										<option>Третье значение</option>
+									</select>
+								</div>
+								<div class="p-selectmenu__item">
+									<select class="selectmenu" name="" id="">
+										<option>Первое значение</option>
+										<option>Второе значение</option>
+										<option>Третье значение</option>
+									</select>
+								</div>
+								<div class="p-selectmenu__item">
+									<select class="selectmenu" name="" id="">
+										<option>Первое значение</option>
+										<option>Второе значение</option>
+										<option>Третье значение</option>
+									</select>
+								</div>
+								<div class="p-selectmenu__item">
+									<a href="#" class="btn btn-small btn-trans">
+										Найти!
+									</a>
+								</div>
+							</div>
+							<div class="p-selectmenu p-selectmenu-bottom">
+								<div class="p-selectmenu__item">
+									<input type="text" class="p-selectmenu__input" placeholder="Поиск по названию, например: Красная пагода">
+								</div>
+								<div class="p-selectmenu__item">
+									<a href="#" class="btn btn-small">
+										Найти!
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-12">
+						<div class="page__p-beverages">
+							<div class="p-beverages">
+								<div class="p-beverages__item">
+									<a href="#" class="p-beverages__link">
+										<div class="p-beverages__top">
+											<img src="img/tea/1.jpg" alt="beverages" class="p-beverages__img">
+										</div>
+										<div class="p-beverages__bottom">
+											<h2 class="p-beverages__title">
+												Чай изысканных сортов
+											</h2>
+										</div>
+									</a>
+								</div>
+								<div class="p-beverages__item">
+									<a href="#" class="p-beverages__link">
+										<div class="p-beverages__top">
+											<img src="img/tea/2.jpg" alt="beverages" class="p-beverages__img">
+										</div>
+										<div class="p-beverages__bottom">
+											<h2 class="p-beverages__title">
+												Кофе в зернах
+											</h2>
+										</div>
+									</a>
+								</div>
+								<div class="p-beverages__item">
+									<a href="#" class="p-beverages__link">
+										<div class="p-beverages__top">
+											<img src="img/tea/3.jpg" alt="beverages" class="p-beverages__img">
+										</div>
+										<div class="p-beverages__bottom">
+											<h2 class="p-beverages__title">
+												Сладости
+											</h2>
+										</div>
+									</a>
+								</div>
+								<div class="p-beverages__item">
+									<a href="#" class="p-beverages__link">
+										<div class="p-beverages__top">
+											<img src="img/tea/4.jpg" alt="beverages" class="p-beverages__img">
+										</div>
+										<div class="p-beverages__bottom">
+											<h2 class="p-beverages__title">
+												Чайная посуда и аксессуары
+											</h2>
+										</div>
+									</a>
+								</div>
+								<div class="p-beverages__item">
+									<a href="#" class="p-beverages__link">
+										<div class="p-beverages__top">
+											<img src="img/tea/5.jpg" alt="beverages" class="p-beverages__img">
+										</div>
+										<div class="p-beverages__bottom">
+											<h2 class="p-beverages__title">
+												Подарочные наборы
+											</h2>
+										</div>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="page__section">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<div class="page__p-title">
+							<h2 class="p-title">
+								<span>Хиты и новинки</span>
+							</h2>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-3">
+						<div class="page__p-item">
+							<div class="p-item">
+								<div class="p-item__top">
+									<img src="img/item/1.jpg" alt="img" class="p-item__img">
+								</div>
+								<div class="p-item__bottom">
+									<h2 class="p-item__title">
+										Золотая Улитка
+									</h2>
+									<span class="p-item__cat">
+										чёрный чай
+									</span>
+									<div class="p-item__row">
+										<select class="selectmenu" name="" id="">
+											<option>100 грамм</option>
+											<option>200 грамм</option>
+											<option>300 грамм</option>
+										</select>
+										<div class="p-item__price">
+											580
+										</div>
+									</div>
+									<div style="text-align: center">
+										<a href="#" class="p-item__more">
+											развернуть описание
+										</a>
+									</div>
+									<a href="#" class="p-item__button">
+										В корзину
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-3">
+						<div class="page__p-item">
+							<div class="p-item">
+								<div class="p-item__top">
+									<img src="img/item/1.jpg" alt="img" class="p-item__img">
+								</div>
+								<div class="p-item__bottom">
+									<h2 class="p-item__title">
+										Золотая Улитка
+									</h2>
+									<span class="p-item__cat">
+										чёрный чай
+									</span>
+									<div class="p-item__row">
+										<select class="selectmenu" name="" id="">
+											<option>100 грамм</option>
+											<option>200 грамм</option>
+											<option>300 грамм</option>
+										</select>
+										<div class="p-item__price">
+											580
+										</div>
+									</div>
+									<div style="text-align: center">
+										<a href="#" class="p-item__more">
+											развернуть описание
+										</a>
+									</div>
+									<a href="#" class="p-item__button">
+										В корзину
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-3">
+						<div class="page__p-item">
+							<div class="p-item">
+								<div class="p-item__top">
+									<img src="img/item/1.jpg" alt="img" class="p-item__img">
+								</div>
+								<div class="p-item__bottom">
+									<h2 class="p-item__title">
+										Золотая Улитка
+									</h2>
+									<span class="p-item__cat">
+										чёрный чай
+									</span>
+									<div class="p-item__row">
+										<select class="selectmenu" name="" id="">
+											<option>100 грамм</option>
+											<option>200 грамм</option>
+											<option>300 грамм</option>
+										</select>
+										<div class="p-item__price">
+											580
+										</div>
+									</div>
+									<div style="text-align: center">
+										<a href="#" class="p-item__more">
+											развернуть описание
+										</a>
+									</div>
+									<a href="#" class="p-item__button">
+										В корзину
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-3">
+						<div class="page__p-item">
+							<div class="p-item">
+								<div class="p-item__top">
+									<img src="img/item/1.jpg" alt="img" class="p-item__img">
+								</div>
+								<div class="p-item__bottom">
+									<h2 class="p-item__title">
+										Золотая Улитка
+									</h2>
+									<span class="p-item__cat">
+										чёрный чай
+									</span>
+									<div class="p-item__row">
+										<select class="selectmenu" name="" id="">
+											<option>100 грамм</option>
+											<option>200 грамм</option>
+											<option>300 грамм</option>
+										</select>
+										<div class="p-item__price">
+											580
+										</div>
+									</div>
+									<div style="text-align: center">
+										<a href="#" class="p-item__more">
+											развернуть описание
+										</a>
+									</div>
+									<a href="#" class="p-item__button">
+										В корзину
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-3">
+						<div class="page__p-item">
+							<div class="p-item">
+								<div class="p-item__top">
+									<img src="img/item/1.jpg" alt="img" class="p-item__img">
+								</div>
+								<div class="p-item__bottom">
+									<h2 class="p-item__title">
+										Золотая Улитка
+									</h2>
+									<span class="p-item__cat">
+										чёрный чай
+									</span>
+									<div class="p-item__row">
+										<select class="selectmenu" name="" id="">
+											<option>100 грамм</option>
+											<option>200 грамм</option>
+											<option>300 грамм</option>
+										</select>
+										<div class="p-item__price">
+											580
+										</div>
+									</div>
+									<div style="text-align: center">
+										<a href="#" class="p-item__more">
+											развернуть описание
+										</a>
+									</div>
+									<a href="#" class="p-item__button">
+										В корзину
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-3">
+						<div class="page__p-item">
+							<div class="p-item">
+								<div class="p-item__top">
+									<img src="img/item/1.jpg" alt="img" class="p-item__img">
+								</div>
+								<div class="p-item__bottom">
+									<h2 class="p-item__title">
+										Золотая Улитка
+									</h2>
+									<span class="p-item__cat">
+										чёрный чай
+									</span>
+									<div class="p-item__row">
+										<select class="selectmenu" name="" id="">
+											<option>100 грамм</option>
+											<option>200 грамм</option>
+											<option>300 грамм</option>
+										</select>
+										<div class="p-item__price">
+											580
+										</div>
+									</div>
+									<div style="text-align: center">
+										<a href="#" class="p-item__more">
+											развернуть описание
+										</a>
+									</div>
+									<a href="#" class="p-item__button">
+										В корзину
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-3">
+						<div class="page__p-item">
+							<div class="p-item">
+								<div class="p-item__top">
+									<img src="img/item/1.jpg" alt="img" class="p-item__img">
+								</div>
+								<div class="p-item__bottom">
+									<h2 class="p-item__title">
+										Золотая Улитка
+									</h2>
+									<span class="p-item__cat">
+										чёрный чай
+									</span>
+									<div class="p-item__row">
+										<select class="selectmenu" name="" id="">
+											<option>100 грамм</option>
+											<option>200 грамм</option>
+											<option>300 грамм</option>
+										</select>
+										<div class="p-item__price">
+											580
+										</div>
+									</div>
+									<div style="text-align: center">
+										<a href="#" class="p-item__more">
+											развернуть описание
+										</a>
+									</div>
+									<a href="#" class="p-item__button">
+										В корзину
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-3">
+						<div class="page__p-item">
+							<div class="p-item">
+								<div class="p-item__top">
+									<img src="img/item/1.jpg" alt="img" class="p-item__img">
+								</div>
+								<div class="p-item__bottom">
+									<h2 class="p-item__title">
+										Золотая Улитка
+									</h2>
+									<span class="p-item__cat">
+										чёрный чай
+									</span>
+									<div class="p-item__row">
+										<select class="selectmenu" name="" id="">
+											<option>100 грамм</option>
+											<option>200 грамм</option>
+											<option>300 грамм</option>
+										</select>
+										<div class="p-item__price">
+											580
+										</div>
+									</div>
+									<div style="text-align: center">
+										<a href="#" class="p-item__more">
+											развернуть описание
+										</a>
+									</div>
+									<a href="#" class="p-item__button">
+										В корзину
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Scripts -->
+	<script type="text/javascript" src="libs/jquery/jquery.min.js"></script>
+	<script type="text/javascript" src="libs/OwlCarousel2/dist/owl.carousel.min.js"></script>
+	<script type="text/javascript" src="libs/jquery-ui/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+	<!-- End_Scripts -->
+</body>
+</html>

@@ -1,0 +1,371 @@
+@import "bourbon/bourbon"
+@import "sass/_blocks"
+
+/*Компоненты*/
+
+.h-search
+	position: relative
+	&__input
+		display: block
+		width: 100%
+		height: 26px
+		border: 1px solid #797979
+		background-color: transparent
+		padding-right: 34px
+		font-size: 14px
+		padding-left: 6px
+		color: #fff
+		&::-webkit-input-placeholder
+			opacity: 1
+		&::-moz-placeholder
+			opacity: 1
+		&:-moz-placeholder
+			opacity: 1
+		&:-ms-input-placeholder
+			opacity: 1
+	.fa
+		font-size: 16px
+		color: #fff
+		position: absolute
+		right: 10px
+		top: 0
+		display: block
+		line-height: 26px
+		vertical-align: middle
+
+.h-nav
+	font-size: 0
+	&__item
+		display: inline-block
+		&:last-child
+			.h-nav__link
+				padding-right: 0
+	&__link
+		font-size: 14px
+		display: block
+		line-height: 42px
+		padding: 0 18px
+		color: #e2e2e2
+		&:hover, &:focus, &:active
+			color: rgba(#e2e2e2,.8)
+			text-decoration: none
+
+.h-logo
+	display: inline-block
+	max-width: 100%
+	&__img
+		display: block
+		max-width: 100%
+		height: auto
+
+.h-schedule
+	&__phone
+		font-size: 18px
+		color: #515151
+		line-height: 22px
+		display: block
+		padding-bottom: 10px
+	&__description
+		color: #515151
+		font-size: 14px
+		line-height: 17px
+		font-family: "UbuntuLight", sans-serif
+.h-addr
+	&__title
+	&__desription
+	&__link
+		text-decoration: underline
+		color: #85a17d
+		&:hover, &:focus, &:active
+			text-decoration: none
+			color: #85a17d
+
+.h-profil
+	&__top
+		padding-left: 23px
+		text-align: right
+		position: relative
+		.fa
+			position: absolute
+			left: 4px
+			top: -2px
+			color: #363636
+			font-size: 24px
+	&__link
+		display: inline-block
+		font-size: 16px
+		color: #363636
+		text-decoration: underline
+		&:hover, &:focus, &:active
+			text-decoration: none
+			color: #363636
+	&__and
+		display: inline-block
+		color: #363636
+		margin: 0 6px
+	&__bottom
+		text-align: right
+		position: relative
+		padding-left: 23px
+		margin-top: 24px
+		cursor: pointer
+		.fa
+			position: absolute
+			left: 0
+			font-size: 24px
+			color: #f26c4f
+			top: -4px
+	&__corz
+		display: block
+		padding-right: 15px
+		color: #515151
+		font-size: 14px
+		position: relative
+		&::after
+			content: "\f0d7"
+			font-family: "FontAwesome"
+			font-size: 14px
+			color: #767676
+			display: block
+			position: absolute
+			right: 0
+			top: 50%
+			transform: translateY(-50%)
+			-webkit-transform: translateY(-50%)
+
+.h-catalog
+	font-size: 0
+	&__item
+		display: inline-block
+		padding-right: 60px
+		&:last-child
+			.h-catalog__link
+				padding-right: 0
+				&::after
+					display: none
+	&__link
+		display: block
+		padding-right: 16px
+		font-family: "UbuntuLight", sans-serif
+		font-size: 16px
+		line-height: 40px
+		color: #5c4c47
+		position: relative
+		&::after
+			content: "\f0d7"
+			font-family: "FontAwesome"
+			color: #5c4c47
+			position: absolute
+			right: 0
+			top: 50%
+			transform: translateY(-50%)
+			-webkit-transform: translateY(-50%)
+		&:hover, &:focus, &:active
+			text-decoration: none
+			color: #5c4c47
+
+.p-slider
+	&__item
+		background-repeat: no-repeat
+		background-position: center center
+		&::after
+			content: ''
+			display: block
+			position: absolute
+			left: 0
+			top: 0
+			right: 0
+			bottom: 0
+			width: 100%
+			height: 100%
+			background-color: rgba(#000,.47)
+			z-index: 1
+	&__img
+		display: block
+		width: 100%
+		height: auto
+	.owl-dots
+		font-size: 0
+		position: absolute
+		bottom: 50px
+		left: 0
+		right: 0
+		text-align: center
+	.owl-dot
+		width: 16px
+		height: 16px
+		border-radius: 50%
+		-webkit-box-shadow: inset 3px 3px 5px 0px rgba(0,0,0,0.75)
+		-moz-box-shadow: inset 3px 3px 5px 0px rgba(0,0,0,0.75)
+		box-shadow: inset 3px 3px 5px 0px rgba(0,0,0,0.75)
+		background-color: #fff
+		display: inline-block
+		margin: 0 4px
+	.owl-nav
+		display: none
+	.active
+		background-color: #f26c4f
+	&__block
+		z-index: 2
+		position: absolute
+		left: 0
+		right: 0
+		bottom: 0
+		top: 0
+		background-repeat: no-repeat
+		background-position: center center
+		text-align: center
+		padding-top: 180px
+	&__title
+		font-size: 48px
+		font-family: "NautilusPompiliusRegular", sans-serif
+		color: #fff
+		display: block
+	&__description
+		color: #fff
+		font-size: 24px
+		font-family: "UbuntuLight", sans-serif
+		margin-bottom: 40px
+		display: block
+
+.p-selectmenu
+	display: grid
+	&-top
+		grid-template-columns: 2fr 2fr 2fr 1fr
+	&-bottom
+		grid-template-columns: 6fr 1fr
+	&__item
+		padding: 6px
+	&__input
+		border: 1px solid #a4a4a4
+		padding: 10px 42px 10px 16px
+		color: #767676
+		width: 100%
+		display: block
+		font-family: "UbuntuLight", sans-serif
+		&::-webkit-input-placeholder
+			opacity: 1
+			color: #767676
+		&::-moz-placeholder
+			opacity: 1
+			color: #767676
+		&:-moz-placeholder
+			opacity: 1
+			color: #767676
+		&:-ms-input-placeholder
+			opacity: 1
+			color: #767676
+
+.p-beverages
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+	justify-content: space-between
+	-webkit-justify-content: space-between
+	&__item
+	&__link
+		display: inline-block
+	&__top
+		width: 192px
+		height: 192px
+		border-radius: 50%
+		overflow: hidden
+	&__img
+		min-width: 100%
+		min-height: 100%
+		display: block
+	&__bottom
+		height: 70px
+		overflow: hidden
+	&__title
+		color: #5c4c47
+		font-size: 24px
+		line-height: 30px
+		font-family: "NautilusPompiliusRegular"
+		display: block
+		width: 192px
+		text-align: center
+		margin-top: 8px
+
+.p-item
+	display: block
+	border: 1px solid #d1d1d1
+	width: 100%
+	position: relative
+	margin-bottom: 43px
+	&__top
+		height: 240px
+		width: 100%
+		overflow: hidden
+	&__img
+		height: 100%
+		width: auto
+	&__bottom
+		padding-top: 10px
+		padding-left: 15px
+		padding-right: 15px
+		padding-bottom: 30px
+	&__title
+		color: #4e3933
+		font-size: 24px
+		display: block
+		text-align: center
+	&__cat
+		display: block
+		text-align: center
+		color: #919090
+		font-size: 14px
+		font-family: "UbuntuLight", sans-serif
+		padding-top: 5px
+	&__row
+		padding-top: 10px
+		@include clearfix
+		.ui-selectmenu-button
+			width: 60%
+			float: left
+			padding: 8px 42px 8px 14px
+		.ui-selectmenu-text
+			font-size: 14px
+	&__price
+		font-family: "NautilusPompiliusRegular"
+		font-size: 30px
+		color: #4e3933
+		float: right
+		width: 39%
+		text-align: right
+		line-height: 100%
+		padding-top: 6px
+		&::after
+			content: 'Р'
+	&__more
+		display: inline-block
+		font-size: 14px
+		color: #a19e9d
+		text-decoration: underline
+		margin-top: 10px
+		&:hover, &:focus, &:active
+			text-decoration: none
+			color: #a19e9d
+	&__button
+		text-transform: uppercase
+		height: 36px
+		border: 1px solid #f26f53
+		border-radius: 5px
+		position: absolute
+		z-index: 2
+		left: 0
+		right: 0
+		bottom: -18px
+		display: block
+		width: 175px
+		text-align: center
+		line-height: 34px
+		background-color: #fff
+		margin: 0 auto
+		color: #f26c4f
+		&:hover, &:focus, &:active
+			color: #fff
+			background-color: #f26c4f
+			text-decoration: none
