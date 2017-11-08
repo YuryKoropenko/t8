@@ -36,6 +36,49 @@ body
 		background-color: #fbf7f4
 
 .page
+	&__section
+		&-text
+			padding-top: 40px
+		&-bg
+			padding: 36px 0
+			margin-bottom: 48px
+			position: relative
+			background-repeat: no-repeat
+			background-size: cover
+			background-position: center center
+			.p-title
+				z-index: 2
+			&::after
+				content: ''
+				left: 0
+				right: 0
+				top: 0
+				bottom: 0
+				background-color: rgba(#fff,.29)
+				width: 100%
+				height: 100%
+				display: block
+				position: absolute
+				z-index: 1
+		&-more
+			background-size: cover
+			background-repeat: no-repeat
+			background-position: center center
+			position: relative
+			&::after
+				content: ''
+				display: block
+				position: absolute
+				left: 0
+				right: 0
+				top: 0
+				bottom: 0
+				width: 100%
+				height: 100%
+				background-color: rgba(#000,.6)
+				z-index: 1
+			.col-md-12
+				z-index: 2
 	&__p-title
 		padding-top: 40px
 		padding-bottom: 32px
@@ -45,3 +88,37 @@ body
 		margin-top: -6px
 	&__p-beverages
 		padding-top: 42px
+	&__p-morebtn
+		text-align: center
+		padding-top: 10px
+	&__p-text
+		&-hide
+			max-height: 360px
+			overflow: hidden
+			position: relative
+			&::after
+				content: ''
+				position: absolute
+				left: 0
+				right: 0
+				bottom: 0
+				height: 100px
+				display: block
+				background: -moz-linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%)
+				background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(255,255,255,0)), color-stop(100%, rgba(255,255,255,1)))
+				background: -webkit-linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%)
+				background: -o-linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%)
+				background: -ms-linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%)
+				background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%)
+				filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#FFFFFF', endColorstr='#FFFFFF',GradientType=0 )
+	&__p-inst
+		display: grid
+		padding: 20px 30px 50px
+		grid-template-columns: 1fr 1fr 1fr
+		grid-template-rows: 1fr 1fr
+		grid-gap: 30px
+	&__p-signup
+		padding-bottom: 54px
+	&__p-statmore
+		padding: 20px 0
+		text-align: center

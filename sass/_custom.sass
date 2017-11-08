@@ -31,7 +31,18 @@ ol, ul
 	display: none
 
 /*standart-style*/
-.page-content
+.p-text
+	&__img
+		display: block
+		float: right
+		padding-left: 30px
+		padding-bottom: 30px
+		position: relative
+		z-index: 2
+		img
+			max-width: 100%
+			height: auto
+			display: block
 	p
 		color: #4b4b4b
 		line-height: 20px
@@ -227,3 +238,21 @@ ol, ul
 		right: 0
 		top: 50%
 		margin-top: -0.5px
+	&__addr
+		font-size: 16px
+		line-height: 20px
+		display: block
+		color: #4b4b4b
+		font-family: "UbuntuLight", sans-serif
+		z-index: 1
+		bottom: -23px
+		left: 0
+		right: 0
+		text-align: center
+		position: absolute
+	&-bg
+		color: #4e3933
+		&::before
+			display: none
+		span
+			background-color: transparent

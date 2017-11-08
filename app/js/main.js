@@ -8,4 +8,10 @@ $(function() {
 	});
 
 	$('.selectmenu').selectmenu();
+
+	$('.p-morebtn__hidden').on('click', function() {
+		$('.page__p-text').removeClass('page__p-text-hide');
+		$(this).parent().parent().parent().hide();
+		return false;
+	});
 });
