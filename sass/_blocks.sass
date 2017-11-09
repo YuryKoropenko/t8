@@ -10,7 +10,6 @@ body
 	line-height: 1.25
 	font-family: "UbuntuRegular", sans-serif
 	overflow-x: hidden
-	height: 9000px
 
 .header
 	&__top
@@ -65,6 +64,8 @@ body
 			background-repeat: no-repeat
 			background-position: center center
 			position: relative
+			padding-top: 40px
+			padding-bottom: 60px
 			&::after
 				content: ''
 				display: block
@@ -122,3 +123,42 @@ body
 	&__p-statmore
 		padding: 20px 0
 		text-align: center
+	&__p-trigers
+		display: -webkit-flex
+		display: -moz-flex
+		display: -ms-flex
+		display: -o-flex
+		display: flex
+		justify-content: space-between
+		-webkit-justify-content: space-between
+
+.footer
+	&__top
+		padding: 10px 0
+		background-color: #f6eae5
+		&-border
+			border-top: 1px dashed #a39996
+			border-bottom: 1px dashed #a39996
+			padding-top: 25px
+			padding-bottom: 40px
+	&__f-soc
+		padding-top: 14px
+	&__center
+		.page__section-more
+			padding-top: 60px
+			padding-bottom: 50 + 126 + px
+		.col-md-2, .col-md-3, .col-md-4
+			z-index: 2
+		hr
+			height: 1px
+			background-color: #afacab
+			width: 100%
+			margin: 10px 0
+	&__bottom
+		z-index: 2
+		position: absolute
+		left: 0
+		right: 0
+		bottom: 50px
+		background-color: rgba(#000,.6)
+		padding: 28px

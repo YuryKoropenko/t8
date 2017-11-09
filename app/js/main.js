@@ -4,7 +4,10 @@ $(function() {
 		margin:0,
 		responsiveClass:true,
 		items:1,
-		nav:true
+		nav:true,
+		autoplay:true,
+		autoplayTimeout:8000,
+		autoplayHoverPause:false
 	});
 
 	$('.selectmenu').selectmenu();
