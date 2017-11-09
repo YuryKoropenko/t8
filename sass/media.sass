@@ -3,22 +3,26 @@
 /*==========  Desktop First Method  ==========*/
 
 /* Large Devices, Wide Screens */
-@media only screen and (max-width : 1200px)
+@media only screen and (max-width : 1199px)
 	/**/
 
 
 /* Medium Devices, Desktops */
-@media only screen and (max-width : 992px)
+@media only screen and (max-width : 991px)
 	/**/
 
 
 /* Small Devices, Tablets */
-@media only screen and (max-width : 768px)
+@media only screen and (max-width : 767px)
+	.header-desktop
+		display: none
+	.header-mob
+		display: block
 	/**/
 
 
 /* Extra Small Devices, Phones */
-@media only screen and (max-width : 480px)
+@media only screen and (max-width : 479px)
 	/**/
 
 
@@ -41,6 +45,10 @@
 
 /* Small Devices, Tablets */
 @media only screen and (min-width : 768px)
+	.header-mob
+		display: none
+	.header-desktop
+		display: block
 	/**/
 
 

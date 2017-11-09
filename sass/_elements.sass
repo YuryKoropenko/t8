@@ -109,6 +109,7 @@
 		padding-left: 23px
 		margin-top: 24px
 		cursor: pointer
+		position: relative
 		.fa
 			position: absolute
 			left: 0
@@ -121,6 +122,11 @@
 		color: #515151
 		font-size: 14px
 		position: relative
+		cursor: pointer
+		-moz-user-select: none
+		-khtml-user-select: none
+		-webkit-user-select: none
+		user-select: none
 		&::after
 			content: "\f0d7"
 			font-family: "FontAwesome"
@@ -138,6 +144,7 @@
 	&__item
 		display: inline-block
 		padding-right: 60px
+		position: relative
 		&:last-child
 			.h-catalog__link
 				padding-right: 0
@@ -576,3 +583,322 @@
 		color: #fff
 		font-size: 14px
 		line-height: 20px
+
+.h-profilPopup
+	position: absolute
+	top: 100%
+	right: 0
+	width: 300px
+	background-color: #fff
+	border: 1px solid #f8f8f8
+	z-index: 2
+	padding: 20px 15px 30px 15px
+	-webkit-box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.3)
+	-moz-box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.3)
+	box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.3)
+	display: none
+	&__close
+		display: inline-block
+		position: absolute
+		left: 0
+		top: 50%
+		transform: tyranslateY(-50%)
+		.fa
+			color: #bcbcbc
+			line-height: 18px
+			font-size: 18px
+	&__item
+		position: relative
+		min-height: 65px
+		padding-left: 109px
+		&-wrapper
+			padding: 16px 0 17px
+			border-bottom: 1px solid #aec0a8
+	&__photo
+		width: 70px
+		height: 65px
+		overflow: hidden
+		position: absolute
+		left: 25px
+		top: 0
+	&__img
+		height: 100%
+		display: block
+		min-width: 100%
+		width: auto
+		float: left
+	&__description
+		text-align: left
+	&__title
+		color: #4e3933
+		font-size: 14px
+		display: block
+		width: 100%
+	&__cat
+		display: block
+		font-size: 12px
+		color: #919090
+		font-family: "UbuntuLight", sans-serif
+		padding: 4px 0 5px
+	&__row
+		@include clearfix
+	.ui-selectmenu-text
+		font-size: 12px
+	.ui-selectmenu-button.ui-button
+		padding: 3px
+		padding-right: 18px
+		width: 50%
+		float: left
+	.ui-selectmenu-button-closed
+		&::after
+			font-size: 10px
+			right: 5px
+	.ui-selectmenu-button-open
+		&::after
+			font-size: 10px
+			right: 5px
+	&__price
+		width: 49%
+		float: right
+		text-align: center
+		font-family: "NautilusPompiliusRegular", sans-serif
+		font-size: 20px
+		color: #4e3933
+		padding-top: 0
+		vertical-align: middle
+		&::after
+			content: 'Р'
+	&__bottom
+		padding-top: 16px
+		text-align: right
+	&__sum
+		font-size: 18px
+		color: #4e3933
+		padding-right: 15px
+		margin-bottom: 16px
+		display: block
+		span
+			font-size: 20px
+			font-family: "NautilusPompiliusRegular", sans-serif
+			display: inline-block
+			margin-left: 10px
+			&::after
+				content: 'Р'
+				margin-left: 5px
+	&__button
+		width: 172px
+		display: inline-block
+		text-transform: uppercase
+		font-size: 14px
+
+.h-catalog-sub
+	background-color: #fbf7f4
+	position: absolute
+	top: 100%
+	left: 0
+	width: 300px
+	z-index: 2
+	display: none
+	-webkit-box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.3)
+	-moz-box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.3)
+	box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.3)
+	&__item
+		display: block
+		width: 100%
+		padding: 10px 20px
+	&__link
+		text-decoration: none
+		font-size: 14px
+		color: #5c4c47
+		font-family: "UbuntuLight", sans-serif
+		&:hover, &:focus, &:active
+			text-decoration: underline
+			color: #5c4c47
+
+.mob-search
+	display: inline-block
+	.fa
+		color: #e2e2e2
+		font-size: 20px
+		line-height: 42px
+.mob-menu
+	position: absolute
+	left: 0
+	right: 0
+	top: 100%
+	background-color: #363636
+	z-index: 10
+	text-align: left
+	padding: 0 20px
+	-webkit-box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.3)
+	-moz-box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.3)
+	box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.3)
+	display: none
+	&__button
+		display: inline-block
+		.fa
+			color: #e2e2e2
+			font-size: 20px
+			line-height: 42px
+	&__item
+		padding: 10px 0 11px
+		border-bottom: 1px solid #687864
+		display: block
+		&:last-child
+			border-bottom: none
+		&-menu
+			.mob-menu__link
+				padding-right: 20px
+				&::after
+					content: "\f0d7"
+					font-family: "FontAwesome"
+					display: block
+					position: absolute
+					right: 0
+					top: 50%
+					transform: translateY(-50%)
+					-webkit-transform: translateY(-50%)
+	&__link
+		color: #e2e2e2
+		font-size: 18px
+		font-family: "UbuntuLight", sans-serif
+		display: inline-block
+		padding-right: 0
+		position: relative
+		&:hover, &:focus, &:active
+			text-decoration: none
+			color: #e2e2e2
+.mob-logo
+	display: inline-block
+	margin-top: 8px
+.mob-phone
+	display: inline-block
+	.fa
+		color: #e2e2e2
+		font-size: 20px
+		line-height: 42px
+.mob-map
+	display: inline-block
+	.fa
+		color: #e2e2e2
+		font-size: 20px
+		line-height: 42px
+.mob-basket
+	display: inline-block
+	.fa
+		color: #f26c4f
+		font-size: 20px
+		line-height: 42px
+
+.mob-catalogmenu
+	position: absolute
+	left: 0
+	right: 0
+	top: 100%
+	z-index: -1
+	background-color: #fbf7f4
+	padding: 5px 20px 0
+	display: none
+	-webkit-box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.3)
+	-moz-box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.3)
+	box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.3)
+	&::after
+		content: ''
+		display: block
+		width: 100%
+		height: 100%
+		position: absolute
+		left: 0
+		right: 0
+		top: 0
+		bottom: 0
+		-webkit-box-shadow: inset 0px 5px 5px 0px rgba(0,0,0,0.3)
+		-moz-box-shadow: inset 0px 5px 5px 0px rgba(0,0,0,0.3)
+		box-shadow: inset 0px 5px 5px 0px rgba(0,0,0,0.3)
+		z-index: -1
+	&__button
+		display: block
+		text-align: center
+		span
+			text-transform: uppercase
+			line-height: 40px
+			font-size: 16px
+			color: #5d4c47
+			font-family: "RobotoLight", sans-serif
+			display: inline-block
+			padding-right: 16px
+			position: relative
+			&::before
+				content: "\f0c9"
+				font-family: "FontAwesome"
+				font-size: 16px
+				display: inline-block
+				margin-right: 10px
+			&::after
+				content: "\f0d7"
+				font-family: "FontAwesome"
+				font-size: 16px
+				display: inline-block
+				margin-left: 10px
+				position: absolute
+				right: 0
+				top: 50%
+				transform: translateY(-50%)
+				-webkit-transform: translateY(-50%)
+	&__item
+		padding: 10px 0 11px
+		border-bottom: 1px solid #a8b89e
+		display: block
+		&:last-child
+			border-bottom: none
+			padding-bottom: 10px
+		&-menu
+			.mob-catalogmenu__link
+				padding-right: 20px
+				&::after
+					content: "\f0d7"
+					font-family: "FontAwesome"
+					display: block
+					position: absolute
+					right: 0
+					top: 50%
+					transform: translateY(-50%)
+					-webkit-transform: translateY(-50%)
+	&__link
+		color: #5d4c47
+		font-size: 18px
+		font-family: "UbuntuLight", sans-serif
+		display: inline-block
+		padding-right: 0
+		position: relative
+		&:hover, &:focus, &:active
+			text-decoration: none
+			color: #5d4c47
+
+.mob-catalogmenuSub
+	padding: 5px 0 5px 20px
+	display: none
+	&__item
+		padding: 5px 0
+	&__link
+		color: #5d4c47
+		font-size: 14px
+		font-family: "UbuntuLight", sans-serif
+		display: inline-block
+		&:hover, &:focus, &:active
+			text-decoration: underline
+			color: #5d4c47
+
+.mob-menuSub
+	padding: 5px 0 5px 20px
+	display: none
+	&__item
+		padding: 5px 0
+	&__link
+		color: #e2e2e2
+		font-size: 14px
+		font-family: "UbuntuLight", sans-serif
+		display: inline-block
+		&:hover, &:focus, &:active
+			text-decoration: underline
+			color: #e2e2e2
