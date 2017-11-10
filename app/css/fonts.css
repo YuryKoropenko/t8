@@ -1,8 +1,8 @@
 /* font-family: "UbuntuRegular" */
 @font-face {
   font-family: "UbuntuRegular";
-  src: url("../fonts/Ubuntu/UbuntuRegular/RobotoRegular.eot");
-  src: url("../fonts/Ubuntu/UbuntuRegular/RobotoRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/Ubuntu/UbuntuRegular/RobotoRegular.woff") format("woff"), url("../fonts/Ubuntu/UbuntuRegular/RobotoRegular.ttf") format("truetype");
+  src: url("../fonts/Ubuntu/UbuntuRegular/UbuntuRegular.eot");
+  src: url("../fonts/Ubuntu/UbuntuRegular/UbuntuRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/Ubuntu/UbuntuRegular/UbuntuRegular.woff") format("woff"), url("../fonts/Ubuntu/UbuntuRegular/UbuntuRegular.ttf") format("truetype");
   font-style: normal;
   font-weight: normal;
 }

@@ -36,6 +36,9 @@
 								<a href="#" class="mob-search">
 									<i class="fa fa-search" aria-hidden="true"></i>
 								</a>
+								<div class="mob-search__window">
+									<input type="text" class="h-search__input" placeholder="Поиск по сайту">
+								</div>
 							</div>
 							<div class="header__mob-menu">
 								<a href="#" class="mob-menu__button">
@@ -102,7 +105,7 @@
 								</a>
 							</div>
 							<div class="header__mob-phone">
-								<a href="#" class="mob-phone">
+								<a href="tel:+74956920836" class="mob-phone">
 									<i class="fa fa-phone-square" aria-hidden="true"></i>
 								</a>
 							</div>
@@ -113,6 +116,7 @@
 							</div>
 							<div class="header__mob-basket">
 								<a href="#" class="mob-basket">
+									<span class="mob-basket__count">3</span>
 									<i class="fa fa-shopping-cart" aria-hidden="true"></i>
 								</a>
 							</div>
@@ -274,15 +278,18 @@
 		<div class="header__top">
 			<div class="container">
 				<div class="row">
-					<div class="col-md-4">
+					<div class="col-md-3 col-lg-4 col-sm-1">
 						<div class="header__h-search">
+							<a href="#" class="h-search__loop">
+								<i class="fa fa-search" aria-hidden="true"></i>
+							</a>
 							<div class="h-search">
 								<input type="text" class="h-search__input" placeholder="Поиск по сайту">
 								<i class="fa fa-search" aria-hidden="true"></i>
 							</div>
 						</div>
 					</div>
-					<div class="col-md-8">
+					<div class="col-md-9 col-lg-8 col-sm-11">
 						<div class="header__h-nav">
 							<ul class="h-nav">
 								<li class="h-nav__item">
@@ -329,26 +336,26 @@
 		<div class="header__center">
 			<div class="container">
 				<div class="row">
-					<div class="col-md-4">
+					<div class="col-lg-4 col-md-4 col-sm-4">
 						<div class="header__h-logo">
 							<a href="/" class="h-logo">
 								<img src="img/h-logo.png" alt="Чай, кофе и другие колониальные товары" class="h-logo__img">
 							</a>
 						</div>
 					</div>
-					<div class="col-md-3">
+					<div class="col-md-3 col-sm-3">
 						<div class="header__h-schedule">
 							<div class="h-schedule">
 								<b class="h-schedule__phone">
 									+7 (495) 692-08-36
 								</b>
 								<p class="h-schedule__description">
-									Понедельник — суббота с 10 до 20 ч.<br>воскресенье — с 11 до 19 ч.
+									<span class="h-schedule__description-val1">Понедельник — суббота</span> с 10 до 20 ч.<br><span class="h-schedule__description-val2">воскресенье</span> — с 11 до 19 ч.
 								</p>
 							</div>
 						</div>
 					</div>
-					<div class="col-md-3">
+					<div class="col-md-3 col-sm-3">
 						<div class="header__h-addr">
 							<div class="h-addr">
 								<b class="h-schedule__phone h-addr__title">
@@ -360,7 +367,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="col-md-2">
+					<div class="col-md-2 col-sm-2">
 						<div class="header__h-profil">
 							<div class="h-profil">
 								<div class="h-profil__top">
@@ -368,12 +375,12 @@
 									<i class="h-profil__and">
 										|
 									</i>
-									<a href="#" class="h-profil__link">Регистрация</a>
+									<a href="#" class="h-profil__link h-profil__link-last">Регистрация</a>
 									<i class="fa fa-user" aria-hidden="true"></i>
 								</div>
 								<div class="h-profil__bottom">
 									<span class="h-profil__corz">
-										12 товаров на 5000 Р
+										12 <span>товаров на 5000 Р</span>
 									</span>
 									<i class="fa fa-shopping-cart" aria-hidden="true"></i>
 									<div class="h-profilPopup">
@@ -638,8 +645,7 @@
 	<div class="page">
 		<div class="page__p-slider">
 			<div class="p-slider owl-carousel">
-				<div class="p-slider__item">
-					<img src="img/slider/1.jpg" alt="slid" class="p-slider__img">
+				<div class="p-slider__item" style="background-image: url(img/slider/1.jpg);">
 					<div class="p-slider__block" style="background-image: url(img/slider/patern.png);">
 						<div class="container">
 							<div class="row">
@@ -660,8 +666,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="p-slider__item">
-					<img src="img/slider/1.jpg" alt="slid" class="p-slider__img">
+				<div class="p-slider__item" style="background-image: url(img/slider/1.jpg);">
 					<div class="p-slider__block" style="background-image: url(img/slider/patern.png);">
 						<div class="container">
 							<div class="row">
@@ -682,8 +687,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="p-slider__item">
-					<img src="img/slider/1.jpg" alt="slid" class="p-slider__img">
+				<div class="p-slider__item" style="background-image: url(img/slider/1.jpg);">
 					<div class="p-slider__block" style="background-image: url(img/slider/patern.png);">
 						<div class="container">
 							<div class="row">
@@ -704,8 +708,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="p-slider__item">
-					<img src="img/slider/1.jpg" alt="slid" class="p-slider__img">
+				<div class="p-slider__item" style="background-image: url(img/slider/1.jpg);">
 					<div class="p-slider__block" style="background-image: url(img/slider/patern.png);">
 						<div class="container">
 							<div class="row">
@@ -728,7 +731,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="page__section">
+		<div class="page__section page__section-bord">
 			<div class="container">
 				<div class="row">
 					<div class="col-md-12">
@@ -865,7 +868,7 @@
 					</div>
 				</div>
 				<div class="row">
-					<div class="col-md-3">
+					<div class="col-md-3 col-sm-3">
 						<div class="page__p-item">
 							<div class="p-item">
 								<div class="p-item__top">
@@ -888,9 +891,17 @@
 											580
 										</div>
 									</div>
+									<div class="p-item__description">
+										<p>
+											Этот чай составлен из почек, первых и вторых листочков. Цвет листьев медный и темно-коричневый. Благородный коньячный цвет настоя имеет полный сложный аромат, в котором слышатся тона сухофруктов и тропических цветов. 
+										</p>
+									</div>
 									<div style="text-align: center">
-										<a href="#" class="p-item__more">
+										<a href="#" class="p-item__more p-item__more-on">
 											развернуть описание
+										</a>
+										<a href="#" class="p-item__more p-item__more-off">
+											свернуть описание
 										</a>
 									</div>
 									<a href="#" class="p-item__button">
@@ -900,7 +911,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="col-md-3">
+					<div class="col-md-3 col-sm-3">
 						<div class="page__p-item">
 							<div class="p-item">
 								<div class="p-item__top">
@@ -923,9 +934,17 @@
 											580
 										</div>
 									</div>
+									<div class="p-item__description">
+										<p>
+											Этот чай составлен из почек, первых и вторых листочков. Цвет листьев медный и темно-коричневый. Благородный коньячный цвет настоя имеет полный сложный аромат, в котором слышатся тона сухофруктов и тропических цветов. 
+										</p>
+									</div>
 									<div style="text-align: center">
-										<a href="#" class="p-item__more">
+										<a href="#" class="p-item__more p-item__more-on">
 											развернуть описание
+										</a>
+										<a href="#" class="p-item__more p-item__more-off">
+											свернуть описание
 										</a>
 									</div>
 									<a href="#" class="p-item__button">
@@ -935,7 +954,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="col-md-3">
+					<div class="col-md-3 col-sm-3">
 						<div class="page__p-item">
 							<div class="p-item">
 								<div class="p-item__top">
@@ -958,9 +977,17 @@
 											580
 										</div>
 									</div>
+									<div class="p-item__description">
+										<p>
+											Этот чай составлен из почек, первых и вторых листочков. Цвет листьев медный и темно-коричневый. Благородный коньячный цвет настоя имеет полный сложный аромат, в котором слышатся тона сухофруктов и тропических цветов. 
+										</p>
+									</div>
 									<div style="text-align: center">
-										<a href="#" class="p-item__more">
+										<a href="#" class="p-item__more p-item__more-on">
 											развернуть описание
+										</a>
+										<a href="#" class="p-item__more p-item__more-off">
+											свернуть описание
 										</a>
 									</div>
 									<a href="#" class="p-item__button">
@@ -970,7 +997,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="col-md-3">
+					<div class="col-md-3 col-sm-3">
 						<div class="page__p-item">
 							<div class="p-item">
 								<div class="p-item__top">
@@ -993,9 +1020,17 @@
 											580
 										</div>
 									</div>
+									<div class="p-item__description">
+										<p>
+											Этот чай составлен из почек, первых и вторых листочков. Цвет листьев медный и темно-коричневый. Благородный коньячный цвет настоя имеет полный сложный аромат, в котором слышатся тона сухофруктов и тропических цветов. 
+										</p>
+									</div>
 									<div style="text-align: center">
-										<a href="#" class="p-item__more">
+										<a href="#" class="p-item__more p-item__more-on">
 											развернуть описание
+										</a>
+										<a href="#" class="p-item__more p-item__more-off">
+											свернуть описание
 										</a>
 									</div>
 									<a href="#" class="p-item__button">
@@ -1005,7 +1040,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="col-md-3">
+					<div class="col-md-3 col-sm-3">
 						<div class="page__p-item">
 							<div class="p-item">
 								<div class="p-item__top">
@@ -1028,9 +1063,17 @@
 											580
 										</div>
 									</div>
+									<div class="p-item__description">
+										<p>
+											Этот чай составлен из почек, первых и вторых листочков. Цвет листьев медный и темно-коричневый. Благородный коньячный цвет настоя имеет полный сложный аромат, в котором слышатся тона сухофруктов и тропических цветов. 
+										</p>
+									</div>
 									<div style="text-align: center">
-										<a href="#" class="p-item__more">
+										<a href="#" class="p-item__more p-item__more-on">
 											развернуть описание
+										</a>
+										<a href="#" class="p-item__more p-item__more-off">
+											свернуть описание
 										</a>
 									</div>
 									<a href="#" class="p-item__button">
@@ -1040,7 +1083,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="col-md-3">
+					<div class="col-md-3 col-sm-3">
 						<div class="page__p-item">
 							<div class="p-item">
 								<div class="p-item__top">
@@ -1063,9 +1106,17 @@
 											580
 										</div>
 									</div>
+									<div class="p-item__description">
+										<p>
+											Этот чай составлен из почек, первых и вторых листочков. Цвет листьев медный и темно-коричневый. Благородный коньячный цвет настоя имеет полный сложный аромат, в котором слышатся тона сухофруктов и тропических цветов. 
+										</p>
+									</div>
 									<div style="text-align: center">
-										<a href="#" class="p-item__more">
+										<a href="#" class="p-item__more p-item__more-on">
 											развернуть описание
+										</a>
+										<a href="#" class="p-item__more p-item__more-off">
+											свернуть описание
 										</a>
 									</div>
 									<a href="#" class="p-item__button">
@@ -1075,7 +1126,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="col-md-3">
+					<div class="col-md-3 col-sm-3">
 						<div class="page__p-item">
 							<div class="p-item">
 								<div class="p-item__top">
@@ -1098,9 +1149,17 @@
 											580
 										</div>
 									</div>
+									<div class="p-item__description">
+										<p>
+											Этот чай составлен из почек, первых и вторых листочков. Цвет листьев медный и темно-коричневый. Благородный коньячный цвет настоя имеет полный сложный аромат, в котором слышатся тона сухофруктов и тропических цветов. 
+										</p>
+									</div>
 									<div style="text-align: center">
-										<a href="#" class="p-item__more">
+										<a href="#" class="p-item__more p-item__more-on">
 											развернуть описание
+										</a>
+										<a href="#" class="p-item__more p-item__more-off">
+											свернуть описание
 										</a>
 									</div>
 									<a href="#" class="p-item__button">
@@ -1110,7 +1169,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="col-md-3">
+					<div class="col-md-3 col-sm-3">
 						<div class="page__p-item">
 							<div class="p-item">
 								<div class="p-item__top">
@@ -1133,9 +1192,17 @@
 											580
 										</div>
 									</div>
+									<div class="p-item__description">
+										<p>
+											Этот чай составлен из почек, первых и вторых листочков. Цвет листьев медный и темно-коричневый. Благородный коньячный цвет настоя имеет полный сложный аромат, в котором слышатся тона сухофруктов и тропических цветов. 
+										</p>
+									</div>
 									<div style="text-align: center">
-										<a href="#" class="p-item__more">
+										<a href="#" class="p-item__more p-item__more-on">
 											развернуть описание
+										</a>
+										<a href="#" class="p-item__more p-item__more-off">
+											свернуть описание
 										</a>
 									</div>
 									<a href="#" class="p-item__button">
@@ -1203,6 +1270,40 @@
 				</div>
 				<div class="row">
 					<div class="col-md-12">
+						<div class="page__p-inst-sl">
+							<div class="p-inst-sl owl-carousel">
+								<div class="p-inst-sl__item">
+									<a href="#" class="p-inst-sl__link">
+										<img src="img/instagram/1.jpg" alt="alt" class="p-inst-sl__img">
+									</a>
+								</div>
+								<div class="p-inst-sl__item">
+									<a href="#" class="p-inst-sl__link">
+										<img src="img/instagram/2.jpg" alt="alt" class="p-inst-sl__img">
+									</a>
+								</div>
+								<div class="p-inst-sl__item">
+									<a href="#" class="p-inst-sl__link">
+										<img src="img/instagram/3.jpg" alt="alt" class="p-inst-sl__img">
+									</a>
+								</div>
+								<div class="p-inst-sl__item">
+									<a href="#" class="p-inst-sl__link">
+										<img src="img/instagram/4.jpg" alt="alt" class="p-inst-sl__img">
+									</a>
+								</div>
+								<div class="p-inst-sl__item">
+									<a href="#" class="p-inst-sl__link">
+										<img src="img/instagram/5.jpg" alt="alt" class="p-inst-sl__img">
+									</a>
+								</div>
+								<div class="p-inst-sl__item">
+									<a href="#" class="p-inst-sl__link">
+										<img src="img/instagram/6.jpg" alt="alt" class="p-inst-sl__img">
+									</a>
+								</div>
+							</div>
+						</div>
 						<div class="page__p-inst">
 							<div class="p-inst">
 								<a href="#" class="p-inst__link">

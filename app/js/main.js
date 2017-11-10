@@ -21,6 +21,17 @@ $(function() {
 		autoplayHoverPause:false
 	});
 
+	$('.p-inst-sl').owlCarousel({
+		loop:true,
+		margin:0,
+		responsiveClass:true,
+		items:1,
+		nav:true,
+		autoplay:true,
+		autoplayTimeout:8000,
+		autoplayHoverPause:false
+	});
+
 	$('.selectmenu').selectmenu();
 
 	$('.p-morebtn__hidden').on('click', function() {
@@ -33,9 +44,14 @@ $(function() {
 		$('.h-profilPopup').fadeToggle(100);
 		$(document).click(function(event) {
 			if ($(event.target).closest(".h-profilPopup").length) return;
-				$('.h-profilPopup').fadeOut(100);
+				$('.h-profilPopup').stop(false, true).fadeOut(100);
 				event.stopPropagation();
 			});
+		return false;
+	});
+
+	$('.h-search__loop').on('click', function() {
+		$('.h-search').stop(false, true).slideToggle(300);
 		return false;
 	});
 
@@ -63,6 +79,11 @@ $(function() {
 		return false;
 	});
 
+	$('.mob-search').on('click', function() {
+		$(this).parent().children('.mob-search__window').stop(false, true).slideToggle(300);
+		return false;
+	});
+
 	$('.mob-catalogmenu__link').on('click', function() {
 		$(this).parent('.mob-catalogmenu__item-menu').children('.mob-catalogmenuSub').stop(false, true).slideToggle(300);
 	});
@@ -73,8 +94,27 @@ $(function() {
 		$(this).children('.h-catalog-sub').stop(false, true).fadeOut(100);
 	});
 
+	$('.p-item__more-on').on('click', function() {
+		$(this).hide();
+		$(this).parent().parent('.p-item__bottom').stop(false, true).addClass('p-item__bottom-active');
+		$(this).parent().children('.p-item__more-off').show();
+		return false;
+	});
+
+	$('.p-item__more-off').on('click', function() {
+		$(this).hide();
+		$(this).parent().parent('.p-item__bottom').stop(false, true).removeClass('p-item__bottom-active');
+		$(this).parent().children('.p-item__more-on').show();
+		return false;
+	});
+
 	$('.nohref').on('click', function() {
 		return false;
 	});
+
+	if ( $(window).width() < 1199 ) {
+		$('.h-schedule__description-val1').text('ПБ - СБ');
+		$('.h-schedule__description-val2').text('ВС');
+	}
 
 });
