@@ -32,6 +32,14 @@ $(function() {
 		autoplayHoverPause:false
 	});
 
+	$('.p-trigers__slider').owlCarousel({
+		loop:true,
+		margin:0,
+		responsiveClass:true,
+		items:1,
+		nav:true
+	});
+
 	$('.selectmenu').selectmenu();
 
 	$('.p-morebtn__hidden').on('click', function() {

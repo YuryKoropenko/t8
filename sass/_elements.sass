@@ -543,6 +543,7 @@
 		transform: translateX(-50%)
 		-webkit-transform: translateX(-50%)
 
+
 	&__bottom
 		display: block
 		text-align: center
@@ -551,6 +552,39 @@
 		display: inline-block
 		color: #fff
 		letter-spacing: 0.01em
+	&__slider
+		.p-trigers
+			width: 100%
+		.p-trigers__img
+			width: auto !important
+			height: auto
+		.p-trigers__top
+			width: 100%
+		.p-trigers__bottom
+			width: 100%
+		.owl-nav
+		display: none
+		.owl-dots
+			font-size: 0
+			position: absolute
+			bottom: -35px
+			left: 0
+			right: 0
+			text-align: center
+		.owl-dot
+			width: 16px
+			height: 16px
+			border-radius: 50%
+			-webkit-box-shadow: inset 3px 3px 5px 0px rgba(0,0,0,0.75)
+			-moz-box-shadow: inset 3px 3px 5px 0px rgba(0,0,0,0.75)
+			box-shadow: inset 3px 3px 5px 0px rgba(0,0,0,0.75)
+			background-color: #fff
+			display: inline-block
+			margin: 0 4px
+		.owl-nav
+			display: none
+		.owl-dot.active
+			background-color: #f26c4f
 
 .f-soc
 	&__list
@@ -1002,3 +1036,11 @@
 		display: block
 		width: 100%
 		height: auto
+
+.f-menu-mob
+	display: block
+	min-height: 1px
+	width: 163px
+	margin: 0 auto
+	background-color: #97908e
+	clear: both

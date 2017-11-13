@@ -569,7 +569,7 @@ body {
   z-index: 2;
 }
 
-.footer__center hr {
+.footer__center .f-menu-desc {
   height: 1px;
   background-color: #afacab;
   width: 100%;
@@ -1323,6 +1323,56 @@ body {
   letter-spacing: 0.01em;
 }
 
+.p-trigers__slider {
+  display: none;
+}
+
+.p-trigers__slider .p-trigers {
+  width: 100%;
+}
+
+.p-trigers__slider .p-trigers__img {
+  width: auto !important;
+  height: auto;
+}
+
+.p-trigers__slider .p-trigers__top {
+  width: 100%;
+}
+
+.p-trigers__slider .p-trigers__bottom {
+  width: 100%;
+}
+
+.p-trigers__slider .owl-dots {
+  font-size: 0;
+  position: absolute;
+  bottom: -35px;
+  left: 0;
+  right: 0;
+  text-align: center;
+}
+
+.p-trigers__slider .owl-dot {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  -webkit-box-shadow: inset 3px 3px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: inset 3px 3px 5px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: inset 3px 3px 5px 0px rgba(0, 0, 0, 0.75);
+  background-color: #fff;
+  display: inline-block;
+  margin: 0 4px;
+}
+
+.p-trigers__slider .owl-nav {
+  display: none;
+}
+
+.p-trigers__slider .owl-dot.active {
+  background-color: #f26c4f;
+}
+
 .f-soc__list {
   display: -webkit-flex;
   display: -moz-flex;
@@ -1928,4 +1978,13 @@ body {
   display: block;
   width: 100%;
   height: auto;
+}
+
+.f-menu-mob {
+  display: block;
+  min-height: 1px;
+  width: 163px;
+  margin: 0 auto;
+  background-color: #97908e;
+  clear: both;
 }
