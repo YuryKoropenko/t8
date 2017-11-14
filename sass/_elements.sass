@@ -1044,3 +1044,101 @@
 	margin: 0 auto
 	background-color: #97908e
 	clear: both
+
+.p-path
+	font-size: 0
+	&__item
+		display: inline-block
+		padding-right: 20px
+		position: relative
+		&-last
+			padding-right: 0
+			&::after
+				display: none !important
+			.p-path__link
+				text-decoration: none
+				color: #989898
+		&::after
+			content: "\f054"
+			font-family: "FontAwesome"
+			color: #85a17d
+			font-size: 12px
+			position: absolute
+			right: 5px
+			bottom: 2px
+			display: block
+	&__link
+		font-size: 14px
+		color: #515151
+		text-decoration: underline
+		line-height: 20px
+
+.p-cat
+	position: relative
+	min-height: 67px
+	display: block
+	&:hover, &:focus, &:active
+		.p-cat__title
+			text-decoration: none
+			color: #767676
+	&__left
+		width: 67px
+		height: 67px
+		border-radius: 50%
+		overflow: hidden
+		display: -webkit-flex
+		display: -moz-flex
+		display: -ms-flex
+		display: -o-flex
+		display: flex
+		-webkit-align-items: center
+		align-items: center
+		justify-content: space-between
+		-webkit-justify-content: space-between
+	&__img
+		display: block
+		min-width: 100%
+		height: 100%
+	&__title
+		line-height: 18px
+		color: #767676
+		text-decoration: underline
+		display: inline-block
+		position: absolute
+		left: 82px
+		top: 50%
+		transform: translateY(-50%)
+		-webkit-transform: translateY(-50%)
+	&-menu
+		.p-cat__title
+			margin-right: 13px
+			&::after
+				content: "\f0d7"
+				font-family: "FontAwesome"
+				display: block
+				position: absolute
+				right: -13px
+				top: 50%
+				transform: translateY(-50%)
+	&__submenu
+		position: absolute
+		top: 100%
+		left: 82px
+		width: 300px
+		z-index: 2
+		background-color: #fbf7f4
+		margin-top: -46px
+		display: none
+		-webkit-box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.3)
+		-moz-box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.3)
+		box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.3)
+		&-item
+			padding: 10px 20px
+			display: block
+			width: 100%
+		&-link
+			color: #5c4c47
+			font-size: 14px
+			&:hover, &:focus, &:active
+				color: #5c4c47
+				text-decoration: underline

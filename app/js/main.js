@@ -44,6 +44,9 @@ $(function() {
 
 	$('.p-morebtn__hidden').on('click', function() {
 		$('.page__p-text').removeClass('page__p-text-hide');
+		$('.page__p-text').css({
+			'max-height': '100%'
+		});
 		$(this).parent().parent().parent().hide();
 		return false;
 	});
@@ -114,6 +117,12 @@ $(function() {
 		$(this).parent().parent('.p-item__bottom').stop(false, true).removeClass('p-item__bottom-active');
 		$(this).parent().children('.p-item__more-on').show();
 		return false;
+	});
+
+	$('.page__p-cat').hover(function() {
+		$(this).children('.p-cat__submenu').stop(false, true).fadeIn(100);
+	}, function() {
+		$(this).children('.p-cat__submenu').stop(false, true).fadeOut(100);
 	});
 
 	$('.nohref').on('click', function() {
