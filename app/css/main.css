@@ -518,7 +518,7 @@ body {
 .page__p-inst {
   display: grid;
   padding: 20px 30px 50px;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: repeat(3, 1fr);
   grid-template-rows: 1fr 1fr;
   grid-gap: 30px;
 }
@@ -1190,6 +1190,10 @@ body {
   color: #85a17d;
 }
 
+.p-inst {
+  overflow: hidden;
+}
+
 .p-inst__link {
   display: block;
   height: 100%;
@@ -1199,9 +1203,9 @@ body {
 
 .p-inst__img {
   display: block;
-  min-width: 100%;
   min-height: 100%;
   height: auto;
+  width: 100%;
 }
 
 .p-signup__title {
