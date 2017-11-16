@@ -41,6 +41,7 @@ $(function() {
 	});
 
 	$('.selectmenu').selectmenu();
+	$('.p-tov__img-fancybox').fancybox();
 
 	$('.p-morebtn__hidden').on('click', function() {
 		$('.page__p-text').removeClass('page__p-text-hide');
@@ -123,6 +124,31 @@ $(function() {
 		$(this).children('.p-cat__submenu').stop(false, true).fadeIn(100);
 	}, function() {
 		$(this).children('.p-cat__submenu').stop(false, true).fadeOut(100);
+	});
+
+	$('.p-tov__item-1 .p-tov__sub-title').on('click', function() {
+		$('.p-tov__item-2 .p-tov__sub-title').removeClass('p-tov__sub-title-active');
+		$('.p-tov__item-3 .p-tov__sub-title').removeClass('p-tov__sub-title-active');
+		$(this).toggleClass('p-tov__sub-title-active');
+		$('.p-tov__item-2 .p-tov__sub-title').parent().children('.p-tov__sub-description').slideUp(300);
+		$('.p-tov__item-3 .p-tov__sub-title').parent().children('.p-tov__sub-description').slideUp(300);
+		$(this).parent().children('.p-tov__sub-description').slideToggle(300);
+	});
+	$('.p-tov__item-2 .p-tov__sub-title').on('click', function() {
+		$('.p-tov__item-1 .p-tov__sub-title').removeClass('p-tov__sub-title-active');
+		$('.p-tov__item-3 .p-tov__sub-title').removeClass('p-tov__sub-title-active');
+		$(this).toggleClass('p-tov__sub-title-active');
+		$('.p-tov__item-1 .p-tov__sub-title').parent().children('.p-tov__sub-description').slideUp(300);
+		$('.p-tov__item-3 .p-tov__sub-title').parent().children('.p-tov__sub-description').slideUp(300);
+		$(this).parent().children('.p-tov__sub-description').slideToggle(300);
+	});
+	$('.p-tov__item-3 .p-tov__sub-title').on('click', function() {
+		$('.p-tov__item-1 .p-tov__sub-title').removeClass('p-tov__sub-title-active');
+		$('.p-tov__item-2 .p-tov__sub-title').removeClass('p-tov__sub-title-active');
+		$(this).toggleClass('p-tov__sub-title-active');
+		$('.p-tov__item-1 .p-tov__sub-title').parent().children('.p-tov__sub-description').slideUp(300);
+		$('.p-tov__item-2 .p-tov__sub-title').parent().children('.p-tov__sub-description').slideUp(300);
+		$(this).parent().children('.p-tov__sub-description').slideToggle(300);
 	});
 
 	$('.nohref').on('click', function() {

@@ -85,8 +85,8 @@ ol, ul {
   color: #4b4b4b;
   line-height: 20px;
   display: block;
-  padding-left: 24px;
   position: relative;
+  padding: 5px 0 5px 24px;
 }
 
 .p-text ul li::before {
@@ -103,7 +103,7 @@ ol, ul {
   color: #4b4b4b;
   line-height: 20px;
   display: block;
-  padding-left: 24px;
+  padding: 5px 0 5px 24px;
   position: relative;
 }
 
@@ -140,6 +140,10 @@ ol, ul {
   line-height: 20px;
   color: inherit;
   font-family: "UbuntuItalic", sans-serif;
+}
+
+.page__p-text .p-stat__description {
+  padding-top: 0;
 }
 
 .ui-selectmenu-button.ui-button {
@@ -404,8 +408,42 @@ body {
   text-align: right;
 }
 
+.page {
+  overflow-x: hidden;
+}
+
 .page__section-text {
   padding-top: 40px;
+}
+
+.page__section-zav {
+  height: 860px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  position: relative;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  -webkit-align-items: center;
+  align-items: center;
+  justify-content: space-between;
+  -webkit-justify-content: space-between;
+}
+
+.page__section-zav::after {
+  content: '';
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
 }
 
 .page__section-bg {
@@ -460,6 +498,32 @@ body {
 
 .page__section-more .col-md-12 {
   z-index: 2;
+}
+
+.page__section-block {
+  padding: 70px 0 519px;
+  margin-bottom: 0;
+  position: relative;
+}
+
+.page__section-bord {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(255, 255, 255, 0.8);
+  width: 100%;
+  z-index: 2;
+}
+
+.page__section-bord::after {
+  content: '';
+  left: 13px;
+  right: 13px;
+  top: 13px;
+  bottom: 13px;
+  border: 2px dashed #c1cfbd;
+  position: absolute;
 }
 
 .page__p-title {
@@ -555,6 +619,38 @@ body {
 .page__p-cat {
   padding-bottom: 30px;
   position: relative;
+}
+
+.page__p-tov {
+  padding-bottom: 26px;
+}
+
+.page__p-tea {
+  position: relative;
+  z-index: 1;
+}
+
+.page__p-ordernow {
+  background-color: rgba(255, 255, 255, 0.89);
+  padding: 56px 80px;
+  position: relative;
+}
+
+.page__p-ordernow::after {
+  content: '';
+  display: block;
+  position: absolute;
+  left: 13px;
+  right: 13px;
+  top: 13px;
+  bottom: 13px;
+  border: 2px dashed #bfcdbb;
+}
+
+.page__p-info {
+  padding: 85px 0 68px;
+  position: relative;
+  z-index: 6;
 }
 
 .footer__top {
@@ -1634,7 +1730,7 @@ body {
   top: 100%;
   left: 0;
   width: 300px;
-  z-index: 2;
+  z-index: 100;
   display: none;
   -webkit-box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.3);
   -moz-box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.3);
@@ -2134,4 +2230,337 @@ body {
 .p-cat__submenu-link:hover, .p-cat__submenu-link:focus, .p-cat__submenu-link:active {
   color: #5c4c47;
   text-decoration: underline;
+}
+
+.p-tov__img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.p-tov__img-fancybox {
+  display: block;
+  outline: none;
+}
+
+.p-tov__img-fancybox:hover, .p-tov__img-fancybox:focus, .p-tov__img-fancybox:active {
+  text-decoration: none;
+  color: transparent;
+}
+
+.p-tov__img-wp {
+  position: relative;
+}
+
+.p-tov__img-wp::after {
+  content: '';
+  left: 10px;
+  right: 10px;
+  top: 10px;
+  bottom: 10px;
+  width: auto;
+  height: auto;
+  display: block;
+  position: absolute;
+  background-color: transparent;
+  z-index: 2;
+  border: 1px dashed #767171;
+}
+
+.p-tov__title {
+  color: #85a17d;
+  font-size: 36px;
+  font-family: "NautilusPompiliusRegular", sans-serif;
+  display: block;
+  border-bottom: 1px solid #d7d7d7;
+  padding-bottom: 12px;
+}
+
+.p-tov__description {
+  font-size: 15px;
+  color: #515151;
+  line-height: 17.5px;
+  padding: 20px 0;
+  display: block;
+}
+
+.p-tov__grams {
+  border-bottom: 1px solid #d7d7d7;
+  padding-bottom: 20px;
+}
+
+.p-tov__gram {
+  padding: 5px 0;
+  display: block;
+}
+
+.p-tov__gram input {
+  display: none;
+}
+
+.p-tov__gram input:checked + label:after {
+  display: block !important;
+}
+
+.p-tov__gram label {
+  padding-left: 27px;
+  position: relative;
+  cursor: pointer;
+}
+
+.p-tov__gram label::before {
+  content: '';
+  width: 15px;
+  height: 15px;
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  margin-top: -7.5px;
+  border-radius: 50%;
+  border: 3px solid #959595;
+}
+
+.p-tov__gram label::after {
+  content: '';
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background-color: #464646;
+  left: 4px;
+  top: 50%;
+  margin-top: -3.5px;
+  position: absolute;
+  display: none;
+}
+
+.p-tov__row {
+  display: grid;
+  padding-top: 16px;
+  grid-template-columns: 2fr 1fr 3fr;
+}
+
+.p-tov__row .p-tov__grid:last-child {
+  text-align: right;
+}
+
+.p-tov__price {
+  display: block;
+  font-family: "NautilusPompiliusRegular", sans-serif;
+  color: #4e3933;
+  font-size: 36px;
+}
+
+.p-tov__price::after {
+  content: 'Р';
+}
+
+.p-tov__count {
+  display: block;
+  width: 44px;
+  height: 36px;
+  border: 1px solid #dadada;
+  text-align: center;
+}
+
+.p-tov__buy {
+  display: inline-block;
+  width: 175px;
+  text-transform: uppercase;
+  font-family: "UbuntuRegular", sans-serif;
+  text-shadow: none;
+  font-size: 16px;
+  height: 36px;
+  line-height: 34px;
+}
+
+.p-tov__info {
+  padding: 0 15px;
+  border-radius: 4px;
+  border: 1px dashed #e1e1e1;
+}
+
+.p-tov__item {
+  border-bottom: 1px solid #d7d7d7;
+}
+
+.p-tov__item:last-child {
+  border-bottom: none;
+}
+
+.p-tov__sub-title {
+  color: #904d30;
+  height: 52px;
+  line-height: 50px;
+  display: block;
+  padding-left: 25px;
+  padding-right: 25px;
+  position: relative;
+  cursor: pointer;
+}
+
+.p-tov__sub-title .fa {
+  color: #904d30;
+  font-size: 16px;
+  position: absolute;
+  left: 0;
+  top: 17px;
+}
+
+.p-tov__sub-title::after {
+  content: "\f0d7";
+  font-family: "FontAwesome";
+  position: absolute;
+  right: 0;
+  top: 0;
+  color: #85a17d;
+  font-size: 18px;
+}
+
+.p-tov__sub-title-active::after {
+  content: "\f0d8" !important;
+}
+
+.p-tov__sub-description {
+  color: #4b4b4b;
+  font-size: 14px;
+  line-height: 15px;
+  font-family: "UbuntuLight", sans-serif;
+  display: block;
+  padding-bottom: 28px;
+  display: none;
+}
+
+.p-tov__share {
+  color: #767676;
+  font-size: 24px;
+  font-family: "NautilusPompiliusRegular", sans-serif;
+  font-style: italic;
+  padding-top: 26px;
+}
+
+.p-tov__share-list {
+  font-size: 0;
+  padding: 0 8px;
+  display: inline-block;
+}
+
+.p-tov__share-item {
+  display: inline-block;
+  padding: 0 8px;
+}
+
+.p-tov__share-link {
+  width: 28px;
+  height: 28px;
+  display: block;
+  border-radius: 50%;
+  background-color: #dcc0b4;
+  text-align: center;
+}
+
+.p-tov__share-link:hover, .p-tov__share-link:focus, .p-tov__share-link:active {
+  text-decoration: none;
+  color: #fff;
+}
+
+.p-tov__share-link .fa {
+  color: #fff;
+  font-size: 16px;
+  line-height: 28px;
+}
+
+.p-tea {
+  text-align: center;
+}
+
+.p-tea__img {
+  display: inline-block;
+}
+
+.p-tea__title {
+  font-size: 36px;
+  color: #fff;
+  font-family: "NautilusPompiliusRegular", sans-serif;
+}
+
+.p-tea__description {
+  display: inline-block;
+  font-size: 18px;
+  line-height: 22px;
+  color: #d1d1d1;
+}
+
+.p-tea__description sup {
+  font-size: 12px;
+}
+
+.p-tea__italic {
+  font-size: 30px;
+  color: #fff;
+  font-family: "NautilusPompiliusRegular", sans-serif;
+  font-style: italic;
+}
+
+.p-ordernow {
+  position: relative;
+  z-index: 2;
+}
+
+.p-ordernow__title {
+  color: #85a17d;
+  font-size: 36px;
+  font-family: "NautilusPompiliusRegular", sans-serif;
+  display: block;
+  text-align: center;
+  padding-bottom: 40px;
+}
+
+.p-ordernow__subtitle {
+  font-size: 24px;
+  display: block;
+  border-bottom: 1px solid #d7d7d7;
+  padding-bottom: 12px;
+  color: #904d30;
+}
+
+.p-ordernow__description {
+  padding: 12px 0;
+}
+
+.p-ordernow .p-tov__grams {
+  padding-bottom: 12px;
+}
+
+.p-ordernow .page__p-tov {
+  padding-bottom: 0px;
+}
+
+.p-ordernow .p-tov__img-wp {
+  margin-right: -5px;
+}
+
+.p-info__title {
+  color: #904d30;
+  font-size: 24px;
+  font-family: "UbuntuLight", sans-serif;
+  padding-left: 40px;
+  position: relative;
+  padding-bottom: 26px;
+}
+
+.p-info__title .fa {
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 5px;
+}
+
+.p-info__description {
+  font-size: 16px;
+  line-height: 20px;
+  color: #4b4b4b;
+  font-family: "UbuntuLight", sans-serif;
+  max-height: 240px;
+  overflow: hidden;
 }
