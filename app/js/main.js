@@ -40,9 +40,6 @@ $(function() {
 		nav:true
 	});
 
-	$('.selectmenu').selectmenu();
-	$('.p-tov__img-fancybox').fancybox();
-
 	$('.p-morebtn__hidden').on('click', function() {
 		$('.page__p-text').removeClass('page__p-text-hide');
 		$('.page__p-text').css({
@@ -150,6 +147,9 @@ $(function() {
 		$('.p-tov__item-2 .p-tov__sub-title').parent().children('.p-tov__sub-description').slideUp(300);
 		$(this).parent().children('.p-tov__sub-description').slideToggle(300);
 	});
+
+	$('.selectmenu').selectmenu();
+	$('.p-tov__img-fancybox').fancybox();
 
 	$('.nohref').on('click', function() {
 		return false;
